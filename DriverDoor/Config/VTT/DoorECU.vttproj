@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Vector.VTT.Configuration">
+  <FileFormatVersion xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">3</FileFormatVersion>
+  <Project z:Id="2">
+    <_p z:Ref="1" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    <EcuInstanceSet z:Id="3">
+      <Content z:Id="4" z:Size="0" />
+    </EcuInstanceSet>
+    <ExtraDllSet z:Id="5">
+      <Content z:Id="6" z:Size="0" />
+    </ExtraDllSet>
+    <GeneralPcTargetSettings z:Id="7">
+      <AutoCompiler>false</AutoCompiler>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <BuildSolution>true</BuildSolution>
+      <BuildTestApi>false</BuildTestApi>
+      <CanoeConfigPath z:Id="8"></CanoeConfigPath>
+      <CompilerId>VS2013</CompilerId>
+      <CreateDebugVersion>false</CreateDebugVersion>
+      <GenerateCastEnvs>false</GenerateCastEnvs>
+      <GenerateCsvFile>true</GenerateCsvFile>
+      <GenerateKernelConfiguration>false</GenerateKernelConfiguration>
+      <GenerateSolution>true</GenerateSolution>
+      <ValidateSourceFiles>false</ValidateSourceFiles>
+      <VerboseLevel>0</VerboseLevel>
+    </GeneralPcTargetSettings>
+    <IdeSolutionFile z:Id="9"></IdeSolutionFile>
+    <NetworkSet z:Id="10">
+      <Content z:Id="11" z:Size="0" />
+    </NetworkSet>
+    <OutputFolder z:Id="12"></OutputFolder>
+    <SimulationSetups z:Id="13">
+      <Content z:Id="14" z:Size="1">
+        <SimulationSetup z:Id="15">
+          <CanoeConfigPath z:Ref="8" i:nil="true" />
+          <DataObjectsNamespace z:Id="16">$(PROJECTNAME)DO</DataObjectsNamespace>
+          <DataTypesNamespace z:Id="17">$(PROJECTNAME)DT</DataTypesNamespace>
+          <ExtraDllSet z:Ref="5" i:nil="true" />
+          <Name z:Id="18">Setup</Name>
+          <NetworkSet z:Ref="10" i:nil="true" />
+          <ParticipantsNamespace i:nil="true" />
+          <SimulationInstanceSet z:Id="19">
+            <Content z:Id="20" z:Size="0" />
+          </SimulationInstanceSet>
+          <SutFolder z:Id="21"></SutFolder>
+          <TestApiFolder z:Id="22"></TestApiFolder>
+        </SimulationSetup>
+      </Content>
+    </SimulationSetups>
+    <SipData z:Id="23">
+      <CBD z:Id="24">CBD1500710</CBD>
+      <DeliveryNumber>0</DeliveryNumber>
+      <Path z:Id="25">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\..\..\..\..\..\..\Vector\CBD1500710_D05_Canoeemu" /&gt;</Path>
+      <SipVersion z:Id="26">19.6.1</SipVersion>
+      <VttGeneratorVersion z:Id="27" />
+    </SipData>
+    <SolutionGuid z:Id="28">6D844B16-8163-4BCB-89AC-DD1C3F05DEE5</SolutionGuid>
+    <SutFolder z:Id="29"></SutFolder>
+    <SwcInstanceSet z:Id="30">
+      <Content z:Id="31" z:Size="0" />
+    </SwcInstanceSet>
+    <SystemDescriptionFileGroups z:Id="32" z:Size="1">
+      <FileGroup z:Id="33">
+        <Name z:Id="34">DoorECU</Name>
+        <NameIsEducatedGuess>true</NameIsEducatedGuess>
+        <SystemDescriptionFiles z:Id="35" z:Size="1">
+          <BasedFileName z:Id="36">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\DoorECU.dpa" /&gt;</BasedFileName>
+        </SystemDescriptionFiles>
+      </FileGroup>
+    </SystemDescriptionFileGroups>
+    <SystemDescriptionFiles z:Id="37" z:Size="1">
+      <BasedFileName z:Id="38">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\..\DoorECU.dpa" /&gt;</BasedFileName>
+    </SystemDescriptionFiles>
+    <TestApiFolder z:Id="39"></TestApiFolder>
+    <TestApiGenerationParameters i:nil="true" />
+    <VttVersionSavedWith z:Id="40">3.0.45</VttVersionSavedWith>
+  </Project>
+</ProjectModel>

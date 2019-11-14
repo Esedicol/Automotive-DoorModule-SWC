@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Settings>
+    <Settings Name="CFG5_GUI_SETTING">
+        <Settings Name="com.vector.cfg.gui.app.views.validation.validationview.hideack">
+            <Setting Value="false" Name="buttonstate"/>
+        </Settings>
+    </Settings>
+    <Settings Name="com.vector.cfg.consistency.internal.executer.BackgroundValidationExecuter">
+        <Setting Value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz&#xA;aG9sZHhwP0AAAAAAAAx3CAAAABAAAAAEdABiY29tLnZlY3Rvci5jZmcubW9kZWwuc2VydmljZXMu&#xA;aW50ZXJuYWwuYnN3aW50YmVoYXZpb3Iuc3luY2hyb25pemF0aW9uLkJzd0ludGVybmFsQmVoYXZp&#xA;b3JWYWxpZGF0b3JzcgAOamF2YS5sYW5nLkxvbmc7i+SQzI8j3wIAAUoABXZhbHVleHIAEGphdmEu&#xA;bGFuZy5OdW1iZXKGrJUdC5TgiwIAAHhwAAAAAAMAAAB0AE9jb20udmVjdG9yLmNmZy5jb25zaXN0&#xA;ZW5jeS5iYXNpY3J1bGVzLmludGVybmFsLkJzd0ltcGxlbWVudGF0aW9uVW5hbWJpZ3VvdXNuZXNz&#xA;c3EAfgADAAAAAAMAAAB0ADhjb20udmVjdG9yLmNmZy5jb25zaXN0ZW5jeS5iYXNpY3J1bGVzLmlu&#xA;dGVybmFsLlNob3J0bmFtZXNxAH4AAwAAAAAJAAAAdABDY29tLnZlY3Rvci5jZmcubW9kZWwuc3dj&#xA;dGVtcGxhdGVzLmludGVybmFsLnZhbGlkYXRpb24uU3djVmFsaWRhdGlvbnNxAH4AAwAAAABpAAAA&#xA;eA==" Name="ValidationRuleExecutionTimes"/>
+    </Settings>
+</Settings>

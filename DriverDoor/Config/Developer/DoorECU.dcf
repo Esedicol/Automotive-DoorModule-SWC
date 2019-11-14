@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="430_DEV">
+	<Version>1.0</Version>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
+	<PROJECTASSISTANT>../../DoorECU.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML>Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>PortInterfaces.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ECUProjects/DoorECU.arxml</ARXML>
+		<DVG>ECUProjects/DoorECU.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaWindowSwitch.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaWindowSwitch.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtCoWindowLogic.arxml</ARXML>
+		<DVG>ComponentTypes/CtCoWindowLogic.dvg</DVG>
+	</FILEREF>
+</DCF>

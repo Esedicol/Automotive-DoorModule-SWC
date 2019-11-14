@@ -1,0 +1,15 @@
+﻿14 Oct 2019 13:41:32 - Saving file AdminDataTemplates.xml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\AdminDataTemplates.xml)
+14 Oct 2019 13:41:32 - Saving file DoorECU.dcf (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\DoorECU.dcf)
+14 Oct 2019 13:41:32 - Start import
+14 Oct 2019 13:41:32 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.2 (SP2)\Bin\Predefines\StandardPackages_AR4.arxml).
+14 Oct 2019 13:41:33 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.2 (SP2)\Bin\Predefines\ServicePortInterfaces_4.3.0.arxml).
+14 Oct 2019 13:41:33 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.2 (SP2)\Bin\Predefines\ApplicationPortInterfaces_4.3.0.arxml).
+14 Oct 2019 13:41:33 - Importing file (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+14 Oct 2019 13:41:33 - Merging imported data
+14 Oct 2019 13:41:35 - Finished import
+14 Oct 2019 13:41:35 - Saving file ProfileSettings.xml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\ProfileSettings.xml)
+14 Oct 2019 13:41:35 - Saving file Packages.arxml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\Packages.arxml)
+14 Oct 2019 13:41:35 - Saving file DataTypes.arxml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\DataTypes.arxml)
+14 Oct 2019 13:41:35 - Saving file PortInterfaces.arxml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\PortInterfaces.arxml)
+14 Oct 2019 13:41:36 - Saving file DoorECU.arxml (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\ECUProjects\DoorECU.arxml)
+14 Oct 2019 13:41:36 - Saving file DoorECU.dcf (C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\DoorECU Project\Config\Developer\DoorECU.dcf)
