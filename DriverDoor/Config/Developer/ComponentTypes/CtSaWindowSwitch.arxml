@@ -7,6 +7,27 @@
       <ELEMENTS>
         <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="BC4DDCC1-8547-46D1-B935-E2A461042F92">
           <SHORT-NAME>CtSaWindowSwitch</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="B3665F9C-5A82-46D3-8F89-C52A0C541B2F">
+              <SHORT-NAME>PiWindowSwitchState</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowSwitchState/DeWindowSwitchState</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowSwitchState/Element</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiWindowSwitchState</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="1823D726-A959-4D16-966D-38B6062D4B3F">
               <SHORT-NAME>CtSaWindowSwitch_InternalBehavior</SHORT-NAME>

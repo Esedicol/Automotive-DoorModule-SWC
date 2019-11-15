@@ -7,6 +7,63 @@
       <ELEMENTS>
         <COMPOSITION-SW-COMPONENT-TYPE UUID="9E2097B0-C7EC-46F9-AC81-1F9AAEF50D4B">
           <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="3D52F5C4-4B1C-4EC6-B47F-044EB8F0606C">
+              <SHORT-NAME>CpCoWindowLogic</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ComponentTypes/CtCoWindowLogic</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="5D80CC59-006B-4F0C-AD5D-0132850B5A8D">
+              <SHORT-NAME>CpSaFrontLeftWindowSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/ComponentTypes/CtSaWindowSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="7EBCBC85-19D9-4AF8-AC97-24CC5E91BC32">
+              <SHORT-NAME>CpSaFrontRightWindowSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/ComponentTypes/CtSaWindowSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="2099F928-4593-4E46-AEB5-205E003A670B">
+              <SHORT-NAME>CpSsRearLeftWindowSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/ComponentTypes/CtSaWindowSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="E41957C1-21DB-41A8-ADC0-E18FE37DDD00">
+              <SHORT-NAME>CpSsRearRightWindowSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/ComponentTypes/CtSaWindowSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>
     </AR-PACKAGE>

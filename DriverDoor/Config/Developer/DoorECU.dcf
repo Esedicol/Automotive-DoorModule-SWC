@@ -25,4 +25,7 @@
 		<ARXML>ComponentTypes/CtCoWindowLogic.arxml</ARXML>
 		<DVG>ComponentTypes/CtCoWindowLogic.dvg</DVG>
 	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaWindow.arxml</ARXML>
+	</FILEREF>
 </DCF>
