@@ -5,19 +5,87 @@
     <AR-PACKAGE UUID="0271E4C3-248D-42DB-B20F-8BD6A99F2312">
       <SHORT-NAME>ComponentTypes</SHORT-NAME>
       <ELEMENTS>
-        <APPLICATION-SW-COMPONENT-TYPE UUID="604859DB-9C48-4AB9-9C00-173508E674D1">
-          <SHORT-NAME>CtSaWindow</SHORT-NAME>
-          <INTERNAL-BEHAVIORS>
-            <SWC-INTERNAL-BEHAVIOR UUID="30B5757F-3E46-43AB-A733-8BE7CEF1871A">
-              <SHORT-NAME>CtSaWindow_InternalBehavior</SHORT-NAME>
-              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-            </SWC-INTERNAL-BEHAVIOR>
-          </INTERNAL-BEHAVIORS>
-        </APPLICATION-SW-COMPONENT-TYPE>
         <SWC-IMPLEMENTATION UUID="2A019DD8-28B7-4929-9F2C-B0F329BCB2A5">
           <SHORT-NAME>CtSaWindow_Implementation</SHORT-NAME>
           <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/CtSaWindow/CtSaWindow_InternalBehavior</BEHAVIOR-REF>
         </SWC-IMPLEMENTATION>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="604859DB-9C48-4AB9-9C00-173508E674D1">
+          <SHORT-NAME>CtSaWindow</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="25C1AD73-C261-46D6-AB75-1F16FC0BC87E">
+              <SHORT-NAME>PpWindowState</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowState/DeWindowState</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiWindowState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="3D80B144-407F-4F9F-8095-39E7A48B96A9">
+              <SHORT-NAME>PpCsSetWindowState</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiCsSetWindowState/Operation</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiCsSetWindowState/WriteToWindow</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiCsSetWindowState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="30B5757F-3E46-43AB-A733-8BE7CEF1871A">
+              <SHORT-NAME>CtSaWindow_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <DATA-RECEIVED-EVENT UUID="568612A6-DC62-4B96-AF50-257E1B2ECA7C">
+                  <SHORT-NAME>DRT_OpenWindow_PpWindowState_DeWindowState</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtSaWindow/CtSaWindow_InternalBehavior/OpenWindow</START-ON-EVENT-REF>
+                  <DATA-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSaWindow/PpWindowState</CONTEXT-R-PORT-REF>
+                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowState/DeWindowState</TARGET-DATA-ELEMENT-REF>
+                  </DATA-IREF>
+                </DATA-RECEIVED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="278AB538-B807-428A-BC64-4220BE82458E">
+                  <SHORT-NAME>OpenWindow</SHORT-NAME>
+                  <INTERNAL-TRIGGERING-POINTS>
+                    <INTERNAL-TRIGGERING-POINT UUID="A7BF61BB-2ECD-44A2-8486-38B6708A253A">
+                      <SHORT-NAME>ITP_OpenWindow</SHORT-NAME>
+                      <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                    </INTERNAL-TRIGGERING-POINT>
+                  </INTERNAL-TRIGGERING-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="7359FDA9-971D-4421-883C-0C69124695B9">
+                      <SHORT-NAME>SC_PpCsSetWindowState_WriteToWindow</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSaWindow/PpCsSetWindowState</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiCsSetWindowState/WriteToWindow</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
       </ELEMENTS>
     </AR-PACKAGE>
   </AR-PACKAGES>

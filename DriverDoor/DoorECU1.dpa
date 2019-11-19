@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant Version="5.16.50 SP5">
+  <General>
+    <Name>DoorECU</Name>
+    <Version>1.0</Version>
+    <Author>Brendan</Author>
+    <Description>Blank DaVinci project to use as a starting point for the Door ECU assignment.</Description>
+  </General>
+  <Environment>
+    <Platform>Canoeemu</Platform>
+    <Derivative UUID="35C34EEE-6A21-4D8B-8B60-1CBFC45B32FC">Canoeemu</Derivative>
+    <Compiler UUID="DFDD3B47-BB56-4B45-BEC9-BE0B2C58DC11">Ansi</Compiler>
+    <PinLayout>
+    </PinLayout>
+    <SipIds>
+      <SipId>CBD1500710_D05</SipId>
+    </SipIds>
+    <TargetType>Virtual Target (vVIRTUALtarget)</TargetType>
+    <PostBuildLoadableSupport>false</PostBuildLoadableSupport>
+    <PostBuildSelectableSupport>false</PostBuildSelectableSupport>
+  </Environment>
+  <Folders>
+    <ECUC>.\Config\ECUC</ECUC>
+    <GenData>.\Appl\GenData</GenData>
+    <GenDataVtt>.\Appl\GenDataVtt</GenDataVtt>
+    <Source>.\Appl\Source</Source>
+    <ServiceComponents>.\Config\ServiceComponents</ServiceComponents>
+    <Logs>.\Log</Logs>
+    <SIP>C:\Users\sedic\Desktop\Automotive-Software-Developemnt</SIP>
+    <StartMenu>
+    </StartMenu>
+    <ApplicationComponentFolders>
+      <ApplicationComponentFolder>.\Config\ApplicationComponents</ApplicationComponentFolder>
+    </ApplicationComponentFolders>
+    <BswInternalBehaviour>.\Config\InternalBehavior</BswInternalBehaviour>
+    <McData>.\Config\McData</McData>
+    <DefinitionRestriction>.\DefRestrict</DefinitionRestriction>
+    <AUTOSAR>.\Config\AUTOSAR</AUTOSAR>
+  </Folders>
+  <Tools>
+    <DEV>C:\Program Files (x86)\Vector DaVinci Developer 4.2 (SP2)\Bin\DaVinciDEV.exe</DEV>
+    <VTT UseLatest="true">
+    </VTT>
+  </Tools>
+  <Input>
+    <Options>
+      <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
+      <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
+    </Options>
+  </Input>
+  <References>
+    <DVWorkspace>.\Config\Developer\DoorECU.dcf</DVWorkspace>
+    <VttProject>.\Config\VTT\DoorECU.vttproj</VttProject>
+  </References>
+  <ECUC>
+    <Active RootPackageName="/ActiveEcuC/ActiveEcuC">.\Config\ECUC\DoorECU.ecuc.arxml</Active>
+  </ECUC>
+  <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE" />
+  <DEVSettings>
+    <SelectiveImport>All</SelectiveImport>
+    <ObjectLocking>true</ObjectLocking>
+    <ImportModePreset>true</ImportModePreset>
+  </DEVSettings>
+  <ToolSettings>
+    <Generators />
+    <Misc>
+      <Settings Name="com.vector.cfg.gen.core.bswmdmigration.internal.service.BswImplVersionPersistor">
+        <Settings Name="|MICROSAR|Adc">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|AvTp">
+          <Setting Value="5.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|BswM">
+          <Setting Value="9.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanIf">
+          <Setting Value="6.14.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanNm">
+          <Setting Value="6.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanSM">
+          <Setting Value="2.13.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanTSyn">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanTp">
+          <Setting Value="3.3.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanTrcv_GenericCan|CanTrcv">
+          <Setting Value="4.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|CanTrcv_Tja1040|CanTrcv">
+          <Setting Value="4.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Can_CanoeemuCanoe|Can">
+          <Setting Value="5.7.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Com">
+          <Setting Value="13.3.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|ComM">
+          <Setting Value="8.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|ComXf">
+          <Setting Value="1.8.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Crc">
+          <Setting Value="5.4.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Cry_30_LibCv|Cry">
+          <Setting Value="3.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Csm">
+          <Setting Value="3.0.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Dbg">
+          <Setting Value="1.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Dcm">
+          <Setting Value="8.3.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Dem">
+          <Setting Value="13.6.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Det">
+          <Setting Value="10.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|DiagXf">
+          <Setting Value="1.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Dio">
+          <Setting Value="2.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Dlt">
+          <Setting Value="1.7.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|DoIP">
+          <Setting Value="4.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|E2EPW">
+          <Setting Value="1.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|E2EXf">
+          <Setting Value="1.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Ea">
+          <Setting Value="3.2.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EcuC">
+          <Setting Value="1.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EcuM">
+          <Setting Value="8.0.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Eep">
+          <Setting Value="2.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EthFw">
+          <Setting Value="1.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EthIf">
+          <Setting Value="8.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EthSM">
+          <Setting Value="3.1.3" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EthTSyn">
+          <Setting Value="5.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|EthTrcv_Canoeemu|EthTrcv">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Eth_Canoeemu|Eth">
+          <Setting Value="5.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Fee">
+          <Setting Value="8.1.5" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FiM">
+          <Setting Value="4.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Fls">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrIf">
+          <Setting Value="5.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrNm">
+          <Setting Value="6.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrSM">
+          <Setting Value="2.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrTSyn">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrTp">
+          <Setting Value="2.4.3" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrTrcv_30_Generic|FrTrcv">
+          <Setting Value="2.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|FrTrcv_30_Tja1080|FrTrcv">
+          <Setting Value="4.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Fr_CanoeemuEray|Fr">
+          <Setting Value="5.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Gpt">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Icu">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|IoHwAb">
+          <Setting Value="3.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|IpduM">
+          <Setting Value="6.6.3" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|J1939Dcm">
+          <Setting Value="4.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|J1939Nm">
+          <Setting Value="3.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|J1939Rm">
+          <Setting Value="2.2.4" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|J1939Tp">
+          <Setting Value="1.3.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LdCom">
+          <Setting Value="2.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinIf">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinNm">
+          <Setting Value="2.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinSM">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinTp">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinTrcv_30_Generic|LinTrcv">
+          <Setting Value="5.1.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|LinTrcv_30_Tle7259|LinTrcv">
+          <Setting Value="6.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Mcu">
+          <Setting Value="2.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|MemIf">
+          <Setting Value="3.3.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Nm">
+          <Setting Value="10.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|NvM">
+          <Setting Value="5.7.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Os">
+          <Setting Value="2.8.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|PduR">
+          <Setting Value="10.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Port">
+          <Setting Value="2.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Pwm">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Rte">
+          <Setting Value="4.16.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Rtm">
+          <Setting Value="3.1.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Sd">
+          <Setting Value="5.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|SecOC">
+          <Setting Value="5.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|SoAd">
+          <Setting Value="10.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|SomeIpXf">
+          <Setting Value="1.8.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Spi">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|StbM">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|TcpIp">
+          <Setting Value="6.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Tls">
+          <Setting Value="8.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|UdpNm">
+          <Setting Value="3.2.2" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTAdc">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTCan">
+          <Setting Value="5.7.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTDio">
+          <Setting Value="2.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTEcuC">
+          <Setting Value="1.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTEep">
+          <Setting Value="2.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTEthTrcv">
+          <Setting Value="4.0.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTFls">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTFr">
+          <Setting Value="5.0.1" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTGpt">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTIcu">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTMcu">
+          <Setting Value="2.4.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTOs">
+          <Setting Value="2.8.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTPort">
+          <Setting Value="2.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTPwm">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTSpi">
+          <Setting Value="2.5.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|VTT|VTTWdg">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Wdg">
+          <Setting Value="3.3.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|WdgIf">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|WdgM">
+          <Setting Value="5.2.0" Name="BswImplSwVersion" />
+        </Settings>
+        <Settings Name="|MICROSAR|Xcp">
+          <Setting Value="4.0.0" Name="BswImplSwVersion" />
+        </Settings>
+      </Settings>
+    </Misc>
+  </ToolSettings>
+  <TopDownServiceConfiguration>
+    <NvM>true</NvM>
+  </TopDownServiceConfiguration>
+  <Miscellaneous>
+    <AmdGenerateDebugData>false</AmdGenerateDebugData>
+    <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
+  </Miscellaneous>
+  <SwctGeneration />
+</ProjectAssistant>

@@ -27,5 +27,46 @@
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ComponentTypes/CtSaWindow.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaWindow.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaWindowLockSwitch.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaWindowLockSwitch.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaSideMirror.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaSideMirror.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaSideMirrorSwitch.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaSideMirrorSwitch.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaJoypadX.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaJoypadX.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtSaJoypadY.arxml</ARXML>
+		<DVG>ComponentTypes/CtSaJoypadY.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtAtWindowSwitchDecoder.arxml</ARXML>
+		<DVG>ComponentTypes/CtAtWindowSwitchDecoder.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtAtSideMirrorDecoder.arxml</ARXML>
+		<DVG>ComponentTypes/CtAtSideMirrorDecoder.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtAtWindowOpener.arxml</ARXML>
+		<DVG>ComponentTypes/CtAtWindowOpener.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtHwAbIO.arxml</ARXML>
+		<DVG>ComponentTypes/CtHwAbIO.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtTemperatureReader.arxml</ARXML>
+		<DVG>ComponentTypes/CtTemperatureReader.dvg</DVG>
 	</FILEREF>
 </DCF>

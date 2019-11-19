@@ -9,7 +9,7 @@
           <SHORT-NAME>CtSaWindowSwitch</SHORT-NAME>
           <PORTS>
             <P-PORT-PROTOTYPE UUID="B3665F9C-5A82-46D3-8F89-C52A0C541B2F">
-              <SHORT-NAME>PiWindowSwitchState</SHORT-NAME>
+              <SHORT-NAME>PpWindowSwitchState</SHORT-NAME>
               <ADMIN-DATA>
                 <SDGS>
                   <SDG GID="DV:DEV">
@@ -20,17 +20,60 @@
               <PROVIDED-COM-SPECS>
                 <NONQUEUED-SENDER-COM-SPEC>
                   <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowSwitchState/DeWindowSwitchState</DATA-ELEMENT-REF>
-                </NONQUEUED-SENDER-COM-SPEC>
-                <NONQUEUED-SENDER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowSwitchState/Element</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
                 </NONQUEUED-SENDER-COM-SPEC>
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiWindowSwitchState</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="A14B6DB9-D15A-4087-A702-AB5ACF43EEB7">
+              <SHORT-NAME>PpCsGetWindowState</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiCsGetWindowState/Operation</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiCsGetWindowState/ReadFromWindowState</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiCsGetWindowState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="1823D726-A959-4D16-966D-38B6062D4B3F">
               <SHORT-NAME>CtSaWindowSwitch_InternalBehavior</SHORT-NAME>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="099A3EC4-846D-4C44-83C8-2CF4A0DCE28E">
+                  <SHORT-NAME>ButtonPressed</SHORT-NAME>
+                  <ACTIVATION-REASONS>
+                    <EXECUTABLE-ENTITY-ACTIVATION-REASON>
+                      <SHORT-NAME>ActReason_0</SHORT-NAME>
+                      <BIT-POSITION>0</BIT-POSITION>
+                    </EXECUTABLE-ENTITY-ACTIVATION-REASON>
+                  </ACTIVATION-REASONS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="0F7A3E8A-A6EB-470A-9268-A2F83A82BBDC">
+                      <SHORT-NAME>SEND_PpWindowSwitchState_DeWindowSwitchState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtSaWindowSwitch/PpWindowSwitchState</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiWindowSwitchState/DeWindowSwitchState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>
